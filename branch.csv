@@ -1,0 +1,11 @@
+branch_id,name,city_id
+1,North Office,2
+2,Main,1
+3,NorthEast,6
+4,Central,7
+5,HQ,8
+6,Caribbean,10
+7,West,4
+8,East,3
+9,Coast,5
+10,Coffee,9

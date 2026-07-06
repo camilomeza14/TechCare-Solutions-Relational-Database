@@ -1,0 +1,61 @@
+// Modelo Entidad-Relacion - TechCare Solutions
+// Pegar este codigo en https://dbdiagram.io para generar el diagrama visual
+
+Table riwi_city {
+  city_id int [pk, increment]
+  name varchar [not null, unique]
+}
+
+Table riwi_equipment_category {
+  category_id int [pk, increment]
+  name varchar [not null, unique]
+}
+
+Table riwi_service_type {
+  service_type_id int [pk, increment]
+  name varchar [not null, unique]
+}
+
+Table riwi_technician {
+  technician_id int [pk, increment]
+  name varchar [not null]
+}
+
+Table riwi_equipment {
+  equipment_id int [pk, increment]
+  name varchar [not null]
+  category_id int [not null]
+}
+
+Table riwi_client {
+  client_id int [pk, increment]
+  name varchar [not null]
+  city_id int [not null]
+}
+
+Table riwi_branch {
+  branch_id int [pk, increment]
+  name varchar [not null]
+  city_id int [not null]
+}
+
+Table riwi_work_order {
+  work_order_id varchar [pk]
+  client_id int [not null]
+  branch_id int [not null]
+  technician_id int [not null]
+  equipment_id int [not null]
+  service_type_id int [not null]
+  service_date date [not null]
+  hours int [not null]
+  cost numeric [not null]
+}
+
+Ref: riwi_equipment.category_id > riwi_equipment_category.category_id
+Ref: riwi_client.city_id > riwi_city.city_id
+Ref: riwi_branch.city_id > riwi_city.city_id
+Ref: riwi_work_order.client_id > riwi_client.client_id
+Ref: riwi_work_order.branch_id > riwi_branch.branch_id
+Ref: riwi_work_order.technician_id > riwi_technician.technician_id
+Ref: riwi_work_order.equipment_id > riwi_equipment.equipment_id
+Ref: riwi_work_order.service_type_id > riwi_service_type.service_type_id

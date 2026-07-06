@@ -1,0 +1,66 @@
+EVIDENCIAS DE EJECUCION - Resultados de las consultas sobre los datos normalizados
+(Verificado con los datos reales del proyecto)
+
+
+=== C1 Ordenes por tecnico ===
+ technician  total
+Maria Gomez      4
+ Laura Diaz      4
+ Juan Perez      4
+Carlos Ruiz      4
+Andres Mora      4
+
+=== C2 Servicios por ciudad ===
+        city  total
+ Santa Marta      2
+     Pereira      2
+    Medellín      2
+   Manizales      2
+      Cúcuta      2
+   Cartagena      2
+        Cali      2
+ Bucaramanga      2
+      Bogotá      2
+Barranquilla      2
+
+=== C3 Por tipo de servicio ===
+service_type  total
+  Corrective      8
+  Preventive      6
+Installation      6
+
+=== C4 Equipos con mas mantenimientos ===
+         equipment  cnt
+   Lenovo ThinkPad    4
+        HP ProDesk    4
+Dell Latitude 5420    4
+ Cisco Switch 2960    4
+       Canon Pixma    4
+
+=== C5 Clientes con mas ordenes ===
+    client  total
+ Vision SA      2
+  SoftCorp      2
+ RetailOne      2
+  NovaTech      2
+ MegaFoods      2
+Innova SAS      2
+HealthPlus      2
+ EduCenter      2
+ BioHealth      2
+  Acme Ltd      2
+
+=== C6 Ordenes por sede ===
+      branch  total
+        West      2
+   NorthEast      2
+North Office      2
+        Main      2
+          HQ      2
+        East      2
+      Coffee      2
+       Coast      2
+     Central      2
+   Caribbean      2
+
+OK - verificacion completa
